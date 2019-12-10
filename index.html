@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drawing</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <canvas id="cav" width="1000" height="500"></canvas> 
+        <ul class="btn">
+            <li><input type="button" id="drawer" value="画笔"></li>
+            <li><input type="color" id="color" ></li>
+            <li><input type="button" id="clean" value="清屏"></li>
+            <li><input type="button" id="eraser" value="橡皮"></li>
+            <li><input type="button" id="rescind" value="撤销"></li>
+            <li><input type="range" id="lineRuler" min="1" max="40" value="1"></li>
+        </ul>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.wrapper{
+    width: 800px;
+    height: 100%;
+    margin:50px 100px;
+    cursor: pointer;
+    
+}
+.wrapper canvas{
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 8px 8px 4px #999;
+}
+
+.wrapper ul{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid #000; */
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.wrapper ul li{
+    margin-left:40px
+}
+
+.wrapper ul li input{
+    display: inline-block;
+    background: #ffc421;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-weight: bolder;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    transition-duration: 0.4s;
+}
+.wrapper ul li input:hover {
+    box-shadow: 2px 8px 10px 0 rgba(0,0,0,.3);
+}
+
+/* 自定义样式 */
+input[type=range] {
+
+    -webkit-appearance: none;
+
+    width: 300px;
+
+    border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
+
+}
+
+input[type=range]::-webkit-slider-thumb {
+
+    -webkit-appearance: none;
+
+}  
+
+input[type=range]::-webkit-slider-runnable-track {
+
+    height: 15px;
+
+    border-radius: 10px; /*将轨道设为圆角的*/
+
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/
+
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+
+    -webkit-appearance: none;
+
+    height: 25px;
+
+    width: 25px;
+
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+
+    background: #ffffff; 
+
+    border-radius: 50%; /*外观设置为圆形*/
+
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+
+}
