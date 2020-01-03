@@ -66,7 +66,6 @@ var draw = {
                     break
                 case 'rescind':
                     if (self.imgsArr.length > 0) {
-                        
                         self.ctx.putImageData(self.imgsArr.pop(), 0, 0);
                     }
                     break
